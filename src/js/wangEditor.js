@@ -6765,7 +6765,7 @@ _e(function (E, $) {
             });
 
             // 跨域上传时，传cookie
-            xhr.withCredentials = editor.config.withCredentials || true;
+            xhr.withCredentials = editor.config.withCredentials && true;
 
             // 发送数据
             xhr.send(formData);
